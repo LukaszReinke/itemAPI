@@ -5,7 +5,7 @@ const fs = require('fs').promises;
 const app = express();
 
 // Azure ustawia port w zmiennej środowiskowej PORT
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8080;
 
 app.use(bodyParser.json());
 

@@ -21,10 +21,10 @@ jobs:
             - name: Install Dependencies
               run: npm install
 
-            - name: Log in to Azure
-              uses: azure/login@v1
-              with:
-                creds: ${{ secrets.AZURE_CREDENTIALS }}
+            # - name: Log in to Azure
+            #   uses: azure/login@v1
+            #   with:
+            #     creds: ${{ secrets.AZURE_CREDENTIALS }}
 
             - name: Deploy Azure Functions
               uses: Azure/functions-action@v1

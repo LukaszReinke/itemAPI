@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "ownerId": 1,
+    "title": "Mrowisko Miejskie",
+    "description": "Mrowisko Miejskie jest adaptacją mrówek do życia w środowisku zurbanizowanym. Może znajdować się w szczelinach chodników, pod płytkami czy nawet w budynkach.",
+    "imageUrl": "assets/images/MR5.jpg",
+    "detailedImages": [
+      "assets/images/MR4.jpg",
+      "assets/images/MR3.jpg"
+    ],
+    "rating": 4.083333333333333,
+    "comments": [
+      {
+        "rating": 5,
+        "text": "Great item!"
+      },
+      {
+        "rating": 4,
+        "text": "Very good, but could be better."
+      },
+      {
+        "rating": 5,
+        "text": "This is a new comment!"
+      },
+      {
+        "rating": 3,
+        "text": "Czy wiecie, że mrowiska mogą sięgać nawet 2 metrów głębokości? Fascynujące, jak te małe stworzenia potrafią budować tak skomplikowane struktury!"
+      },
+      {
+        "rating": 5,
+        "text": "Zastanawialiście się kiedyś, jak mrówki komunikują się w mrowisku? Używają feromonów, które są jak tajemniczy język zapachów."
+      },
+      {
+        "rating": 4,
+        "text": "Mrowiska są niezwykle złożonymi ekosystemami. Każdy tunel i komora ma swoje specjalne przeznaczenie."
+      },
+      {
+        "rating": 4,
+        "text": "feadgfe"
+      },
+      {
+        "rating": 4,
+        "text": "fewggerw"
+      },
+      {
+        "rating": 3,
+        "text": "gfdbnfdb"
+      },
+      {
+        "rating": 5,
+        "text": "gfdbnfdbgfdg"
+      },
+      {
+        "rating": 3,
+        "text": "dfbvfdvfdvfdv"
+      },
+      {
+        "rating": 4,
+        "text": "siemano"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "ownerId": 2,
+    "title": "Mrowisko Ogrodowe",
+    "description": "Mrowisko Ogrodowe można znaleźć w przydomowych ogródkach. Mrówki budują je pod ziemią, często blisko źródeł pożywienia, co czyni je trudnymi do zauważenia.",
+    "imageUrl": "assets/images/MR2.jpg",
+    "detailedImages": [
+      "path/to/MR1.jpg",
+      "path/to/MR3.jpg"
+    ],
+    "rating": 3.5,
+    "comments": [
+      {
+        "rating": 3,
+        "text": "It's okay."
+      },
+      {
+        "rating": 4,
+        "text": "Good item, but a bit expensive."
+      },
+      {
+        "rating": 3,
+        "text": "Czy ktoś zauważył, jak mrowiska mogą wpływać na ekosystem wokół nich? Są kluczowym elementem środowiska."
+      }
+    ]
+  }
+]

@@ -1,4 +1,4 @@
-name: Deploy to Azure App Service
+name: Deploy to Azure Functions
 
 on:
     push:
@@ -8,22 +8,26 @@ on:
 jobs:
     build-and-deploy:
         runs-on: ubuntu-latest
+
         steps:
             - name: Checkout Source
               uses: actions/checkout@v3
+
             - name: Setup Node.js version
               uses: actions/setup-node@v4
-              with: 
+              with:
                 node-version: '18.x'
+
             - name: Install Dependencies
               run: npm install
+
             - name: Log in to Azure
               uses: azure/login@v1
               with:
-                creds: ${{ secrets.AZURE_SECRET_WEBAPP_PUBLISH_PROFIL }}
-            - name: Deploy to Azure App Service
-              uses: azure/webapps-deploy@v2
+                creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+            - name: Deploy Azure Functions
+              uses: Azure/functions-action@v1
               with:
                 app-name: jsitemapi
-                publish-profile: ${{ secrets.AZURE_SECRET_WEBAPP_PUBLISH_PROFILE }}
-                package: .
+                package: '.'

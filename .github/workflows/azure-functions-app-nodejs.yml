@@ -28,6 +28,12 @@ jobs:
                 
             #     creds: ${{ secrets.AZURE_CREDENTIALS }}
 
+            - name: Log in to Azure
+              id: azure_login
+              uses: azure/login@v1
+              with:
+               creds: ${{ secrets.AZURE_CREDENTIALS }}
+            
             - name: Deploy Azure Functions
               uses: azure/webapps-deploy@v2
               with:

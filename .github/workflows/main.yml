@@ -1,9 +1,10 @@
 name: Deploy to Azure App Service
 
 on:
-    push:
-        branches:
-            - itemAPI
+  push:
+    branches:
+      - main
+      - itemAPI
 
 jobs:
     build-and-deploy:

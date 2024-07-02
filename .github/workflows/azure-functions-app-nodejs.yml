@@ -22,12 +22,15 @@ jobs:
               run: npm install
 
             - name: Log in to Azure
+              id: azure_login
               uses: azure/login@v1
               with:
-                creds: ${{ secrets.AZURE_SECRET_WEBAPP_PUBLISH_PROFIL }}
+                creds: ${{ secrets.AZURE_CREDENTIALS }}
 
             - name: Deploy Azure Functions
               uses: Azure/functions-action@v1
               with:
                 app-name: jsitemapi
                 package: '.'
+              env:
+                AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS }}
